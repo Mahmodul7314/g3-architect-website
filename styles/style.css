@@ -2,6 +2,10 @@
 /*work sance font*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
 
+*{
+margin:0;
+padding:0;
+}
 
 /*Shared Style-----*/
 *{
@@ -180,6 +184,7 @@ font-weight: 600;
 
 .sponsor{
     text-align: center;
+    margin-top: 60px;
 }
 .sponson-img-container{
     display: flex;
