@@ -107,6 +107,52 @@ align-items: center;
     color:#FF900E;
     font-weight: 700;
 }
+
+/*feature style-----*/
+ .features{
+    display: flex;
+    margin-top: 100px;
+    gap: 130px;
+ }
+    .feature-content .card{
+        padding: 30px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        background: #fff;
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+        }
+ .ten-year-badge{
+    border-radius: 8px;
+    background: #FF900E;
+    color: #FFF;
+    width: 340px;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    bottom: 100px;
+
+ }
+ .feature-img img{
+    height: 90%;
+    margin-left: 50px;
+   }
+
+ .ten-year-badge h2{
+    color: #FFF;
+    font-weight: 700;
+    font-size: 4rem;
+    margin: 0;
+ }
+ .ten-year-badge p{
+    font-size: 1.5rem;
+    font-weight: 500;
+ }
+
+.features .section-title{
+    border-left: 5px solid #FF900E;
+    padding: 20px;
+}
+
 /*facts----container*/
 .facts-card-container{
 display:flex;
@@ -145,7 +191,17 @@ font-weight: 600;
 .sponson-img-container img{
     width: 165px;
 }
-
+.footer-section{
+    background: #FFF4E7;
+    max-width: 1440px;
+    height: 100px;
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   padding-left: 240px;
+   padding-right: 240px;
+   margin:130px 230px 200px 230px;
+}
 
 
 
@@ -165,7 +221,10 @@ font-weight: 600;
     header{
         padding: 10px;
     }
-    nav,nav>ul, .team-container,.facts-card-container,.sponson-img-container
+    nav,nav>ul, .team-container,
+    .facts-card-container,
+    .sponson-img-container,
+    .features
     {
         flex-direction: column;
     }
@@ -173,6 +232,16 @@ font-weight: 600;
         grid-template-columns:1fr;
   
     }
+     .feature-img img{
+       width: 90%;
+        margin-left:0;
+       }
+       .ten-year-badge{
+       max-width:90%;
+       position: static;
+
+       }
+
     .facts-card-container{
         gap: 20px;
     }
@@ -180,12 +249,22 @@ font-weight: 600;
     padding-right:  20px;
     padding-left: 20px;
 }
+ .footer-section{
+    margin: 0;
+    padding: 20px;
+ }
 }
 @media screen and (min-width:577px) and (max-width:960px){
     header{
         padding:40px;
     }
-    nav,.team-container, .sponson-img-container{
+    nav,.team-container,
+     .sponson-img-container, .features
+    {
         flex-direction: column;
     }
+     .footer-section{
+        margin: auto;
+        padding: 20px;
+     }
 }
