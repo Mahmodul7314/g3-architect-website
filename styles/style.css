@@ -6,6 +6,18 @@
 /*Shared Style-----*/
 *{
     font-family: 'Open Sans', sans-serif;
+    
+}
+
+.btn-primary{
+    background: #FF900E;
+    border-radius: 8px;
+    padding: 21px 25px;
+    color: #FFF;
+    font-size: 1.25rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 0;
 }
 
 /*header styles*/
@@ -40,6 +52,7 @@ nav li a{
     color: #424242;
 }
 /*banner style*/
+
 .banner-content{
     max-width:800px;
     text-align: center;
@@ -53,4 +66,28 @@ nav li a{
 .banner-description{
     color:  #727272;
    
+}
+.banner img{
+    width:100%;
+    margin-top: 20px;
+}
+
+/*responsive media ----query*/
+
+@media screen and (max-width:576px){
+    header{
+        padding: 10px;
+    }
+    nav,nav>ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width:960px){
+    header{
+        padding:40px
+    }
+    nav{
+        flex-direction: column;
+    }
 }
